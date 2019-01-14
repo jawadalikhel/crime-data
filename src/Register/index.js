@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './style.css';
+import Home from '../Home';
 
 class Register extends Component{
   constructor(){
@@ -19,14 +20,15 @@ class Register extends Component{
       method: 'POST',
       credentials: 'include',
       body: JSON.stringify(this.state),
-      header: {
+      headers: {
         'Content-Type': 'application/json'
       }
     });
 
     const parsedResponse = await registerResponse.json();
-    if(parsedResponse.data = 'registration successful'){
-      this.props.history.push('/');
+
+    if(parsedResponse.data === 'registration successful'){
+      this.props.history.push('/home');
     }
   }
 
@@ -35,6 +37,11 @@ class Register extends Component{
       [e.target.name]: e.target.value
     })
   }
+
+  gtName = () =>{
+
+  }
+
   render(){
     return(
       <div id="backGround-reg">
@@ -46,6 +53,7 @@ class Register extends Component{
             <button value='register' className='regBtn'>Register</button>
           </form>
         </div>
+        <Home name={this.state.getUsername} />
       </div>
     )
   }

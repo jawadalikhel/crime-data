@@ -1,20 +1,13 @@
 import React, {Component} from 'react';
 import './style.css';
 
-class Home extends Component{
-  render(){
+const Home = (props) => {
+  console.log(props.name, 'the props')
     return(
-      <div id="homePage">
-        <div id="neighbors">
-          <h1>Your neighbors</h1>
-        </div>
-
-        <div id="chat">
-          <h1>Chatboard</h1>
-        </div>
+      <div id="HomeContainer">
+        <h1>Welcome...{props.name}</h1>
       </div>
     )
-  }
 }
 
 export default Home;

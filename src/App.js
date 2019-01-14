@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 // import './App.css';
 import LandingComp from './LandingComp';
 import Register from './Register';
+import Chat from './Chat';
 import Home from './Home';
 
 class App extends Component {
@@ -11,9 +12,10 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            <Route path="/landing" component={LandingComp}/>
+            <Route path="/" component={LandingComp}/>
             <Route path="/register" component={Register} />
             <Route path="/home" component={Home} />
+            <Route path="/chat" component={Chat} />
           </div>
         </Router>
       </div>
