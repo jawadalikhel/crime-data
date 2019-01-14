@@ -1,0 +1,22 @@
+#homePage {
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#neighbors {
+  background-color: lightblue;
+  position: absolute;
+  height: 100%;
+  width: 60%;
+}
+
+#chat {
+  background-color: silver;
+  position: absolute;
+  /* float: right; */
+  height: 100%;
+  width: 40%;
+  margin-left: 60%;
+}
