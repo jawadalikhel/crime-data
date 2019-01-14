@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './style.css';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 class LandingComp extends Component{
   render(){

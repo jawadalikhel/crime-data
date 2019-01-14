@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 // import './App.css';
+import LandingComp from './LandingComp';
 
-import Main from './Main';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Main />
+        <Router>
+            <Route path="/" component={LandingComp} />
+        </Router>
       </div>
     );
   }
