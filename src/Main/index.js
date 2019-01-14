@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import Nav from './Nav';
+import LandingComp from './LandingComp';
+import './style.css';
 
 class Main extends Component{
   render(){
     return(
-      <div>
-        <Nav />
+      <div id="main">
+        <LandingComp />
       </div>
     )
   }

@@ -1,0 +1,30 @@
+#LandingComp {
+  background-color: red;
+  position: fixed;
+  margin-left: 20vh;
+  margin-top: ;
+}
+
+.btn {
+  background-color: ;
+  position: fixed;
+  margin: 0 auto;;
+  margin: 3em;
+  margin-left: 20em;
+  padding: 1em;
+  font-size: 1.5em;
+  border-style: none;
+  border-radius: 5em;
+}
+
+.btn2 {
+  margin-top: 8em;
+  margin-left: 19.5em;
+}
+
+.btn:hover {
+  /* background-color: silver; */
+  /* font-size: 1.2em; */
+  height: 5em;
+  width: 5em;
+}
