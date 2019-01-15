@@ -53,7 +53,6 @@ class Register extends Component{
             <button value='register' className='regBtn'>Register</button>
           </form>
         </div>
-        <Home name={this.state.getUsername} />
       </div>
     )
   }

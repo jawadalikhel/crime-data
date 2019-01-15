@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import LandingComp from './LandingComp';
 import Register from './Register';
 import Chat from './Chat';
-import Home from './Home';
+import Profile from './Profile';
+import Login from './Login';
 
 class App extends Component {
   render() {
@@ -12,10 +13,11 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            <Route path="/" component={LandingComp}/>
+            <Route exact path="/" component={LandingComp}/>
             <Route path="/register" component={Register} />
-            <Route path="/home" component={Home} />
+            <Route path="/profile" component={Profile} />
             <Route path="/chat" component={Chat} />
+            <Route path="/login" component={Login} />
           </div>
         </Router>
       </div>
