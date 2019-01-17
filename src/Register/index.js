@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import './style.css';
-import Home from '../Home';
+import Profile from '../Profile';
 
 class Register extends Component{
   constructor(){
     super();
     this.state = {
-      name: '',
+      fullname: '',
       username: '',
       password: '',
     }
@@ -28,7 +28,7 @@ class Register extends Component{
     const parsedResponse = await registerResponse.json();
 
     if(parsedResponse.data === 'registration successful'){
-      this.props.history.push('/home');
+      this.props.history.push('/profile');
     }
   }
 
@@ -47,9 +47,9 @@ class Register extends Component{
       <div id="backGround-reg">
         <div id='register'>
           <form id='form' onSubmit={this.handleSubmit}>
-            <input type='text' onChange={this.handleChange} name='name' className='input' placeholder='Name' /><br/>
-            <input type='text' onChange={this.handleChange} name='username' className='input' placeholder='username' /><br/>
-            <input type='password' onChange={this.handleChange} name='password' className='input' placeholder='password'/><br/>
+            <input type='text' onChange={this.handleChange} name='fullname' className='input' placeholder='Entet Full Name' /><br/>
+            <input type='text' onChange={this.handleChange} name='username' className='input' placeholder='Enter Username' /><br/>
+            <input type='password' onChange={this.handleChange} name='password' className='input' placeholder='Enter Password'/><br/>
             <button value='register' className='regBtn'>Register</button>
           </form>
         </div>

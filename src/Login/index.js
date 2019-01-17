@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import './style.css';
-import Home from '../Profile';
+import Profile from '../Profile';
 
 class Login extends Component{
   constructor(){
     super();
     this.state = {
-      username: '',
-      password: '',
+      // username: '',
+      // password: '',
+      // sendUsername: '',
     }
   }
 
@@ -27,8 +28,9 @@ class Login extends Component{
       console.log(parsedResponse, 'this is parsed data at login');
 
       if(parsedResponse.data === 'login successful'){
-        this.props.history.push('/home');
-        console.log(this.props.history, ' <-- this.props.history')
+        this.props.history.push('/profile');
+        console.log(parsedResponse.usename, ' <-- the username')
+
       } else if (parsedResponse.data === 'login unsuccessful'){
         alert('Username of Password Wrong')
       }
@@ -43,6 +45,10 @@ class Login extends Component{
     this.setState({
       [e.target.name]: e.target.value
     })
+  }
+
+  passUsername = () => {
+
   }
 
 

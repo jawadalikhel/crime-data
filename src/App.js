@@ -6,6 +6,7 @@ import Register from './Register';
 import Chat from './Chat';
 import Profile from './Profile';
 import Login from './Login';
+import Logout from './Logout';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route path="/profile" component={Profile} />
             <Route path="/chat" component={Chat} />
             <Route path="/login" component={Login} />
+            <Route path="/" component={Logout} />
           </div>
         </Router>
       </div>
